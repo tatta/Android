@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Larm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ActivateTracking">Aktivera tracking</string>
+    <string name="TakePictures">TA BILDER</string>
+    <string name="Record">SPELA IN</string>
+    <string name="Notes">ANTECKNA</string>
+    <string name="Call">STÖDSAMTAL</string>
+    <string name="Alarm">TRYCK FÖR ATT LARMA</string>
+    <string name="Back">Bakåt</string>
+    <string name="Contact">Kontakt</string>
+    <string name="Done">Klar!</string>
+
+</resources>

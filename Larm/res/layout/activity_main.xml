@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:orientation="vertical">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/header"
+        android:layout_gravity="right" />
+
+    <Button
+        android:id="@+id/trackingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/ActivateTracking"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/trackingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Aktivera tracking för att tala.."
+        android:layout_gravity="center_horizontal" />
+
+      <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+
+ 
+ <include android:layout_width="wrap_content"
+  android:layout_height="wrap_content" layout="@layout/footer"
+ />
+ 
+</LinearLayout>
