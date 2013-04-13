@@ -20,20 +20,32 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		ListView listView = (ListView) findViewById(R.id.listview);
-		String[] values = new String[] { "Hem", "Besöka vän", "Skola/jobb",
-				"Shopping/Ärende", "Restaurang/Café", "Krog/Nattklubb",
-				"Övrigt" };
 		
-		// create an ArrayAdaptar from the String Array
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, values);
-		// Assign adapter to ListView
-		listView.setAdapter(adapter);
+		String[] values = getResources().getStringArray(R.array.destination_array);
 
-		final Button button = (Button) findViewById(R.id.trackingButton);
-		button.setOnClickListener(new View.OnClickListener() {
+		// create an ArrayAdaptar from the String Array
+		
+		  ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+		  android.R.layout.simple_list_item_1, values); 
+		  // Assign adapter to ListView 
+		  listView.setAdapter(adapter);
+		  
+		 
+		  final Button menuButton = (Button) findViewById(R.id.menuButton);
+		  final Button trackingButton = (Button) findViewById(R.id.trackingButton);
+		  
+		  final Button pictureButton = (Button) findViewById(R.id.pictureButton);
+		  final Button recordButton = (Button) findViewById(R.id.recordButton);
+		  final Button noteButton = (Button) findViewById(R.id.noteButton);
+		  final Button callButton = (Button) findViewById(R.id.callButton);
+			
+		
+		
+		trackingButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				// Visa scroll list
+				
+				
+
 			}
 		});
 
@@ -46,7 +58,8 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
-
+	
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
