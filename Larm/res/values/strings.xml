@@ -5,6 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="ActivateTracking"><b>Aktivera tracking</b></string>
+    <string name="ActivateTrackingText"><b>Aktivera tracking för att tala..</b></string>
+        
     <string name="TakePictures">TA BILDER</string>
     <string name="Record">SPELA IN</string>
     <string name="Notes">ANTECKNA</string>
@@ -19,16 +21,8 @@
     <string name="Address">Address</string>
     <string name="Postnumber">Postnummer</string>
     <string name="City">Stad</string>
+
+    <string name="Username">Användarnamn</string>
+    <string name="Password">Lösenord</string>
     
-
-    <string-array name="destination_array">
-        <item>Hem</item>
-        <item>Besöka vän</item>
-        <item>Skola/jobb</item>
-        <item>Shopping/Ärende</item>
-        <item>Restaurang/Café</item>
-        <item>Krog/Nattklubb</item>
-        <item>Övrigt</item>
-    </string-array>
-
 </resources>

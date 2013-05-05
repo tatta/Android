@@ -11,25 +11,8 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Logga in för att börja använda Trygg." />
+            android:text="För att veta mer om hur " />
 
-        <EditText
-            android:id="@+id/usernameEdt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="@string/Username" >
-
-        </EditText>
-
-        <EditText
-            android:id="@+id/passwordEdt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/Password" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,16 +20,16 @@
             android:gravity="center" >
 
             <Button
-                android:id="@+id/createAccountBtn"
+                android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Skapa konto" />
+                android:text="Logga ut" />
 
             <Button
-                android:id="@+id/signInBtn"
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Logga in" />
+                android:text="Ok, klar" />
         </LinearLayout>
 
     </LinearLayout>
