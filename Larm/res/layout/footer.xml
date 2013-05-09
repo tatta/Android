@@ -1,55 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF0000"
+    android:gravity="center"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:background="#FF0000" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#000000" >
-
-           <Button
-                android:name="@+id/TakePictures"
-               	android:id="@+id/pictureBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="@string/TakePictures" />
-
-            <Button
-                android:id="@+id/recordBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="@string/Record" />
-
-            <Button
-                android:id="@+id/noteBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="@string/Notes" />
-
-            <Button
-                android:id="@+id/callBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="@string/Call" />
-        </LinearLayout>
+        android:background="#000000" >
 
         <Button
-            android:id="@+id/alarmBtn"
+            android:id="@+id/pictureBtn"
+            android:name="@+id/TakePictures"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Alarm"
-            android:textColor="#ffffff"
-             />
+            android:layout_weight="1.0"
+            android:text="@string/TakePictures" />
+
+        <Button
+            android:id="@+id/recordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/Record" />
+
+        <Button
+            android:id="@+id/noteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/Notes" />
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/Call" />
     </LinearLayout>
 
-</merge>
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Alarm"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

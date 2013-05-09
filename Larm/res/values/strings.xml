@@ -15,7 +15,11 @@
     <string name="Back">Bakåt</string>
     <string name="Contact">Kontakt</string>
     <string name="Done">Klar!</string>
+    
     <string name="Where">VART ÄR DU PÅ VÄG?</string>
+    <string name="How">HUR FÄRDAS DU?</string>
+    
+    
     <string name="Home">Hem</string>
     <string name="Phone">Telefon</string>
     <string name="Address">Address</string>

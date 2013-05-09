@@ -1,121 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Home" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#808080"
-        android:gravity="center"
         android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/whereTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Where"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <TextView
-            android:id="@+id/homeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Home" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <Button
-                    android:id="@+id/backBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Back" />
-
-                <Button
-                    android:id="@+id/contactBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Contact" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/homeEdt"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF" >
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/Home" >
+                 />
+            </EditText>
 
-                <EditText
-                    android:id="@+id/homeEdt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="@string/Home" >
-
-                    <requestFocus />
-                </EditText>
-
-                <EditText
-                    android:id="@+id/phoneEdt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="phone"
-                    android:text="@string/Phone" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/phoneEdt"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF" >
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="@string/Phone" />
+        </LinearLayout>
 
-                <EditText
-                    android:id="@+id/addressEdt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="@string/Address" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
 
-                <EditText
-                    android:id="@+id/postnumberEdt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:text="@string/Postnumber" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/addressEdt"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF" >
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/Address" />
 
-                <EditText
-                    android:id="@+id/cityEdt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="@string/City" />
+            <EditText
+                android:id="@+id/postnumberEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/Postnumber" />
+        </LinearLayout>
 
-                <Button
-                    android:id="@+id/doneBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/Done" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <EditText
+                android:id="@+id/cityEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/City" />
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="fieldsbutton"
+                android:text="@string/Done" />
         </LinearLayout>
     </LinearLayout>
 
-</merge>
+</LinearLayout>

@@ -10,5 +10,16 @@
         <item>Krog/Nattklubb</item>
         <item>Övrigt</item>
     </string-array>
+    
+     <string-array name="vehicle_array">
+        <item>Promenad</item>
+        <item>Cykel</item>
+        <item>Taxi</item>
+        <item>Buss</item>
+        <item>Tåg</item>
+        <item>Jogging/Löpning</item>
+        <item>Bräda/Rullskridskor</item>
+        <item>Övrigt</item>
+    </string-array>
 
 </resources>
